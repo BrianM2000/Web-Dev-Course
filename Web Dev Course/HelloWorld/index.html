@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"></metacharset>
+        <title>Hello, World!</title>
+        <meta name="author" content="Brian M">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="site.css" rel="stylesheet">
+        <link rel="icon" href="images/MIID_Match_1.png" type="image/png">
+    </head>
+    <body>
+        <h1 class="header">Hello World</h1>
+
+        <input type="text" id="name" />
+        <button type="button" onclick="sayHi()">Say Hello</button>
+
+        <fieldset>
+            <legend>Pick a color</legend>
+            <input type="radio" id="radiored" name="radiocolor" value="r">
+            <label for="radiored">red</label><br>
+            <input type="radio" id="radiogreen" name="radiocolor" value="g">
+            <label for="radiogreen">green</label><br>
+            <input type="radio" id="radioblue" name="radiocolor" value="b">
+            <label for="radioblue">blue</label>
+        </fieldset>
+
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="source">Referral Source</label>
+                <select id="source" name="source">
+                    <option>Google</option>
+                    <option>Bing</option>
+                    <option>Mail</option>
+                    <option>Conference</option>
+                    <option>Customer Referral</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <div>
+                <div class="submit-row">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form> 
+
+        <table>
+            <caption>List of Best Selling Games (not bundled with console)</caption>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Sales</th>
+                    <th>Initial Release</th>
+                    <th>Publisher</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Minecraft</td>
+                    <td>180,000,000</td>
+                    <td>2011</td>
+                    <td>Mojang</td>
+                </tr>
+                <tr>
+                    <td>Grand Theft Auto V</td>
+                    <td>120,000,000</td>
+                    <td>2013</td>
+                    <td>Rockstar Games</td>
+                </tr>
+                <tr>
+                    <td>PlayerUnknown's Battlegrounds</td>
+                    <td>60,000,000</td>
+                    <td>2017</td>
+                    <td>PUBG Corporation</td>
+                </tr>
+                <tr>
+                    <td>Pokemon Red / Green</td>
+                    <td>47,520,000</td>
+                    <td>1996</td>
+                    <td>Nintendo</td>
+                </tr>
+                <tr>
+                    <td>Mario Kart Wii</td>
+                    <td>37,240,000</td>
+                    <td>2008</td>
+                    <td>Nintendo</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total Sales</th>
+                    <td>444,760,000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <img src="images/2022-07-16_16.39.38.png" alt="a photo of me">
+
+        <video src="videos/I'm cracked.mp4" type="video/mp4" controls>
+            <p>This element only shows up if the browser does not support HTML5 video. Use it to provide a download link or alternate instructions.</p>
+         </video>
+
+        <p> The <code>document.getElementById()</code> method will select an HTML element that is assigned a specific id.</p>
+
+        <p class="warning"> WATCH OUT!!!</p>
+
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-103.46102803945543%2C43.87750239039023%2C-103.45802932977678%2C43.87995775630232&amp;layer=mapnik" style="border: 1px solid black"><br></iframe>
+
+        <h1>Relative and Absolute units</h1>
+
+        <div class="container">
+            <p class="absolute">I am 150px wide</p>
+            <p class="viewport">I am 30vw wide</p>
+            <p class="em">I am 25em wide</p>
+        </div>
+
+        <ul class="navbar">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+
+        <p class="p1">Paragraph 1</p>
+        <p class="p2">Paragraph 2</p>
+        <p class="p3">Paragraph 3</p>
+
+        <a href="#top"> <br>Jump to top </a>
+
+        <script src="hello.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,242 @@
+
+html {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* element selectors use HTML tags */
+p {
+    color: blue;
+    line-height: 2;
+}
+
+h1{
+    text-align: center;
+}
+
+/* class selectors are added to elements using the class attribute, for example:
+<p class="warning">This is a warning!</p> */
+.warning {
+    color: red;
+    font-weight: bold;
+}
+
+/* id selectors allow you to target a specific element by its id name, for example:
+<div id="disclaimer"></div> */
+
+#disclaimer {
+    border: 1px solid red;
+}
+
+/* attribute selectors let you style elements based on an attribute, usually used for forms. For example:
+<input type="text" id="firstname" name="firstname"> */
+
+input[type=text] {
+    width: 50%;
+}
+
+/* pseudo selectors look for a certain state or property of an element. For example if we wanted to bold a link when hovered over. */
+
+a:hover {
+    font-weight: bold;
+}
+
+.header {
+    text-decoration: underline;
+}
+
+.container {
+    font-size: 2em;
+}
+
+div > p {
+    border: 1px solid black;
+}
+
+.absolute {
+    width: 150px;
+}
+
+.viewport {
+    width: 30vw;
+}
+
+.em {
+    width: 25em;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 1em;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.boxspace {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.p1 {
+    margin-bottom: 30px;
+}
+
+.p2 {
+    margin-top: 10px;
+    margin-bottom: 30px;   
+}
+
+.p3 {
+    margin-top: -20px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+thead th:nth-child(1) {
+    width: 25%;
+}
+
+thead th:nth-child(2) {
+    width: 15%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 25%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+tbody tr td:nth-child(1) {
+    text-align: left;
+}
+
+tbody tr td:nth-child(2) {
+    text-align: center;
+}
+
+tbody tr td:nth-child(3) {
+    text-align: center;
+}
+
+tbody tr td:nth-child(4) {
+    text-align: left;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+thead tr {
+    background-color: black;
+    color: white;
+}
+
+tfoot tr {
+    background-color: black;
+    color: white; 
+}
+
+caption {
+    padding: 20px;
+    font-style: italic;
+    color: darkblue;
+    caption-side: bottom;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+button, 
+input, 
+select, 
+textarea { 
+  font-family: inherit; 
+  font-size: 100%; 
+  box-sizing: border-box; 
+  padding: 0; 
+  margin: 0; 
+} 
+
+textarea { 
+  overflow: auto; 
+} 
+
+form {
+    max-width: 500px;
+    padding: 20px;
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+label {
+    display: inline-block;
+    width: 25%;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 1px solid #c2c2c2;
+    box-shadow: 1px 1px 4px #ebebeb;
+    border-radius: 3px;
+    padding: 7px;
+    outline: none;
+    width: 70%;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+.submit-row {
+    text-align: center;
+}
+
+.submit-row button {
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+}
+
+.submit-row button:hover {
+    background: #EA7B00;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #00cc00;
+}
