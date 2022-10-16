@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>
+    <style>
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .sus{
+        margin-top: calc(70vh + 220px);
+        width: 100px;
+        height: 150px;
+        background: red;
+        border-radius: 100px 100px 0px 0px;
+        position: absolute;
+    }
+    .eye{
+        position:relative;
+        background: teal;
+        border-radius: 100px;
+        width: 75px;
+        height: 50px;
+        left: -20px;
+        top: 30px;
+    }
+
+    #but{
+        border: hidden;
+        background: teal;
+        border-radius: 100px;
+        width: 75px;
+        height: 50px;
+        left: -20px;
+        top: 30px;
+    }
+
+    .leg{
+        position: relative;
+        background: red;
+        width: 40px;
+        height: 40px;
+    }
+    .left{
+        left: 0px;
+        top: 100px;
+    }
+    
+    .right{
+        left: 60px;
+        top: 60px;
+    }
+    .back{
+        position: relative;
+        background:red;
+        width: 50px;
+        height: 70px;
+        left: 75px;
+        top: -70px;
+        border-radius: 0px 10px 10px 0px;
+    }
+        
+    </style>
+</head>
+    <body>
+
+        <script>
+            function play() {
+              var audio = document.getElementById("sound");
+              audio.play();
+            }
+          </script>
+
+        <div class="sus">
+            <div class="eye">
+                <input id="but" type="button" onclick="play()">
+                <audio id="sound"><source src="Among Us Role Sound Effect.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="leg left"></div>
+            <div class="leg right"></div>
+            <div class="back"></div>
+        </div>
+    </body>
+</html>
